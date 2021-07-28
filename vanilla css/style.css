@@ -1,0 +1,87 @@
+*{
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .right img{
+    width: 100%;
+}
+header .left h1{
+    font-size: 50px;
+    margin-bottom: 2rem;
+}
+header .left h3{
+    margin-bottom: 1rem;
+}
+header .left h1 span{
+    color: orange;
+}
+
+
+main .left img{
+    width: 90%;
+}
+main{
+    margin-top: 8rem;
+}
+
+
+
+
+
+/* utility class */
+.container{
+    max-width: 1152px;
+    padding: 0 2rem;
+    margin: 2rem auto;
+}
+.btn{
+    background-image: linear-gradient(orange, tomato);
+    color: white;
+    text-transform: uppercase;
+    padding: .8rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align{
+    align-items: center;
+}
+/* media Query start */
+/* media Query start */
+@media (max-width:768px){
+    header .left h1{
+        font-size: 32px;
+    }
+}
+@media (max-width:688px){
+    header.container,main .container{
+        flex-direction: column;
+    }
+    header.container{
+        flex-direction: column-reverse;
+    }
+    header .right img{
+        width: 90%;
+    }
+    header .left, main .right{
+        text-align: center;
+    }
+    main .right{
+        margin-top: 2rem;
+    }
+}
